@@ -40,8 +40,36 @@ function sum(x: number, y: number) {
 }
 
 let total: number = sum(5,3)
-console.log(total)
+// console.log(total)
 
 // console.log(sum(4,5))
 
-sum(3,2)
+function debug(message: string ) : void {
+    console.log( message )
+}
+
+// debug('hello world')
+
+//rules | shape of the data for person
+interface person {
+    firstName: string, 
+    age: number,
+    children: string[],
+    hasCertificate?: boolean //? means its okay if not but if you do, its boolean
+}
+
+
+let vero: person = {
+    firstName: "Me",
+    age: 30,
+    children: ["Billy", "Bob"], 
+    hasCertificate: true,
+};
+
+let susan: person = {
+    firstName:"susan",
+    age: 30000, 
+    children: [], 
+};
+
+console.log(vero)
